@@ -1,0 +1,50 @@
+﻿@model DatosPaciente.Models.Paciente
+
+@{
+    ViewData["Title"] = "Eliminar Datos del Paciente";
+}
+
+
+<h2>Eliminar</h2>
+
+
+<div>
+
+    <h4>Paciente</h4>
+    <hr />
+    <d1 class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PacienteName)
+
+            @Html.DisplayNameFor(model => model.ApellidoPaciente)
+            <br />
+            @Html.DisplayNameFor(model => model.CorreoPaciente)
+
+        </dt>
+
+
+
+
+
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PacienteName) <br />
+
+            @Html.DisplayFor(model => model.ApellidoPaciente) <br />
+
+            @Html.DisplayFor(model => model.CorreoPaciente) <br />
+
+        </dd>
+    </d1>
+
+</div>
+
+<div>
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="PacienteID" />
+        <input type="submit" class="btn btn-danger" value="Borrar" />
+        <a asp-action="Index" class="btn btn-success">Regresar</a>
+
+    </form>
+
+
+</div>

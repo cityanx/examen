@@ -1,0 +1,123 @@
+﻿@model DatosPaciente.Models.Paciente
+
+@{
+    ViewData["Title"] = "Mostrar Datos del Paciente";
+}
+
+
+<h2>Detalles</h2>
+
+<div>
+
+    <h4>Banda</h4>
+    <hr />
+    <d1 class="row">
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.PacienteName)
+            <br />
+            <br />
+            @Html.DisplayNameFor(model => model.SecondName)
+            <br />
+            <br />
+            @Html.DisplayNameFor(model => model.ApellidoPaciente)
+            <br />
+            <br />
+            @Html.DisplayNameFor(model => model.CorreoPaciente)
+            <br />
+            <br />
+            @Html.DisplayNameFor(model => model.AcompaName)
+            <br />
+            <br />
+            @Html.DisplayNameFor(model => model.AcompaApellido)
+            <br />
+            <br />
+            @Html.DisplayNameFor(model => model.DireccionPrimera)
+            <br />
+            <br />
+            @Html.DisplayNameFor(model => model.DireccionSegunda)
+            <br />
+            <br />
+            @Html.DisplayNameFor(model => model.CiudadPaciente)
+            <br />
+            <br />
+            @Html.DisplayNameFor(model => model.EstadoPaciente)
+            <br />
+            <br />
+            @Html.DisplayNameFor(model => model.PostalPaciente)
+            <br />
+            <br />
+            @Html.DisplayNameFor(model => model.AreaTelefono)
+            <br />
+            <br />
+            @Html.DisplayNameFor(model => model.NumeroTelefono)
+            <br />
+            <br />
+            @Html.DisplayNameFor(model => model.AreaWhats)
+            <br />
+            <br />
+            @Html.DisplayNameFor(model => model.NumeroWhats)
+            <br />
+            <br />
+
+        </dt>
+
+
+
+
+
+        <dd class="col-sm-3">
+            @Html.DisplayFor(model => model.PacienteName)
+            <br />
+            <br />
+            <br />
+            @Html.DisplayFor(model => model.SecondName)
+            <br />
+            <br />
+            @Html.DisplayFor(model => model.ApellidoPaciente)
+            <br />
+            <br />
+            @Html.DisplayFor(model => model.CorreoPaciente)
+            <br />
+            <br />
+            @Html.DisplayFor(model => model.AcompaName)
+            <br />
+            <br />
+            @Html.DisplayFor(model => model.AcompaApellido)
+            <br />
+            <br />
+            @Html.DisplayFor(model => model.DireccionPrimera)
+            <br />
+            <br />
+            @Html.DisplayFor(model => model.DireccionSegunda)
+            <br />
+            <br />
+            @Html.DisplayFor(model => model.CiudadPaciente)
+            <br />
+            <br />
+            @Html.DisplayFor(model => model.EstadoPaciente)
+            <br />
+            <br />
+            @Html.DisplayFor(model => model.PostalPaciente)
+            <br />
+            <br />
+            @Html.DisplayFor(model => model.AreaTelefono)
+            <br />
+            <br />
+            @Html.DisplayFor(model => model.NumeroTelefono)
+            <br />
+            <br />
+            @Html.DisplayFor(model => model.AreaWhats)
+            <br />
+            <br />
+            @Html.DisplayFor(model => model.NumeroWhats)
+            <br />
+            <br />
+        </dd>
+    </d1>
+
+</div>
+
+<div>
+    <a asp-action="Edit" class="btn btn-warning" asp-route-id="@Model.PacienteID">Editar</a>
+    <a asp-action="Index" class="btn btn-success">Regresar</a>
+</div>
